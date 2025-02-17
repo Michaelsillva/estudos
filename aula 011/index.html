@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11</title>
+</head>
+<body><!--para inserir video é simples, usando a tag <video> podemos adicionar o video localmente, adicionando controls para da controle ao video e poster para adicionar uma thambnail, para que o poste fique bonito..-->
+    <h1>Inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu servidor.</p>
+    <audio controls preload="metadata">
+         <source src="Midia-audio/high-fidelity.mp3" type="audio/mpeg">
+    
+    </audio>
+    <audio controls preload="metadata">
+        <source src="Midia-audio/alone.mp3" type="audio/mp3">
+       
+    </audio>
+    <video src="video/Video-Da-Laranja creator.mp4" width="500px" controls poster="imagens/thambnail laranja.png"></video>
+    <!--para mais eficiencia e uma boa dinamica de videos usamos a tag <video> porem com os 'source indicando seus diversos formato para que seja compatível com varios navegadores.'-->
+        <!--exemplo abaixo-->
+
+    <video width="500px" controls poster="imagens/thambnail laranja.png">
+       <source src="video/Video-Da-Laranja mkv.mkv" type="video/mp4">
+       <source src="video/Video-Da-Laranja webm.webm" type="video/webm">
+       <source src="video/video-da-laranja.mp4" type="video/mp4">
+
+    </video>
+    <h1>Inserindo Vídeo do Youtube</h1>
+        <iframe target="_blank" width="560" height="315" src="https://www.youtube.com/embed/K4DyBUG242c?si=XVX6nktZZSC439Zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <h2>Desafio</h2>
+        <a href="segundapag.html"><img src="imagens/thambnail laranja.png" width="500px" alt="imagem de laranja"></a>
+  
+ 
+
+    
+</body>
+</html>

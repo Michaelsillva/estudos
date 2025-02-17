@@ -1,0 +1,20 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    color: #038703;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:visited { color: red;
+}
+a:hover{
+    text-decoration: underline;
+    color: #038703;
+}
+/*
+Anotações Importantes.
+(#)--- ID
+(.)----Class
+(:)----Pseudo-class
+(::)---pseudo-element*/

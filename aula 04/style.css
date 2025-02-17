@@ -1,0 +1,41 @@
+
+
+    /* As medidas Absolutas
+    sao: CM, MM, IN, PX, PT, PC.
+    CM= centimetro
+    MM= milimetro
+    IN= polegada
+    PX= pixel
+    PT= ponto
+    PC= paica*/
+
+    /* As medidas Relativas
+    são: EM, EX, REM, VW, VH, % 
+    EM= altura do M maiúsculo
+    EX= altura x
+    REM= é a abreviação de root, que define o tamanho de um elemento em ralação a tamanho da fonte raiz(ex: elementos dentro do body).
+    VW= largura da viewport
+    VH= altura da viewport
+    %= trabalhando com a porcetagem da tela*/
+   /*larguras aceita por algmas fonte,
+    Lighter, mais magrinha, normal, bold que é negrito e a bolder que é a mais gordinha.*
+
+    /* Podemos adicionar as conunderf de uma fonte usando a tag font: nessa sequencia -> font-style -> font-weight -> font-size -> font-family*/
+
+
+    /*
+    adicionando uma font externa com a a tag @font-face dentro temos algumas conf.
+    font-family src: url(a font que voce escolheu) depois adicionamos o Format,aqui temos varios format de exemplo(tipos de format
+    opentype= otf
+    truetype= ttf
+    embedded-opentype
+    truetype-aat e svg)*/
+   @font-face {
+    font-family: 'god';
+    src: url('fontes/GODOFWAR.TTF') format('truetype');
+   }
+   h1{
+    font-family: 'god';
+    font-weight: 3em
+
+   }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplismente aumente e dimunua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="imagens Dinâmicas">
+    </picture>
+    <h2>Reproduzindo audio</h2>
+    <p>Vamos aprender a reproduzir áudios em HTML 5.</p>
+    <audio src="Midia/alone.mp3" controls></audio>
+    <audio preload="metadata" controls><!-- adicionando <audio> direto é a forma mais fácil de adicionar audio dentro do site, mas vamos priorisar usar <audio></audio>. E dentro da tag audio usaremos o source de acordo com o type da midia.-->
+        <source src="Midia/high-fidelity.mp3" type="audio/mpeg">
+        <!-- podemos adicionar outros source com type midia diferente para ser compatível com outros navegadores como por ex: (OGG type="OGG")
+         (WAV type="wav") e para o mp3 temos (MP3 type="Mpeg")-->
+         <!--podemos adicionar o preload metadata, preload none e o preload auto(nao recomendado ) e o autoplay para deixar o audio tocando no site(nao recomendado), e podemos deixar em loop assim o audio nao para, e podemos adicionar o controls para podermos interagir com a midia.-->
+    </audio>
+    <p>Não consegue reproduzir o áudio?</p>
+    <h3>Lista para Download</h3>
+    <ul>
+        <li>🎵 <a href="Midia/alone.mp3" download="Midia/alone.mp3">Alone.mp3</a></li>
+        <li>🎵 <a href="Midia/high-fidelity.mp3" download="Midia/high-fidelity.mp3">high-Fidelity</a></li>
+    </ul>
+
+</body>
+</htm

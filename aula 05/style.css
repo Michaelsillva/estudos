@@ -1,0 +1,33 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
+    background-color: #fdf2e5;
+} 
+h1#principal{
+    text-align: center;
+    color: #0000ff;
+    text-shadow: 1px 1px 3px #000000;
+}
+.basico{
+    color: #01da01;
+    text-shadow: 1px 1px 3px #000000;
+}
+.intermediario{
+    color: #fff701;
+    text-shadow: 1px 1px 3px #000000;
+}
+.avancado{
+    color: #ff0000;
+    text-shadow: 1px 1px 3px #000000;
+}
+.subtitulo{
+    color: #2296de;
+    text-shadow: 1px 1px 1px #000000;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}

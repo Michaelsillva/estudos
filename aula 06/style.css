@@ -1,0 +1,19 @@
+div{
+    background-color: rgb(252, 8, 8);
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    display: inline-block;
+
+}
+div > p{
+    display: none;
+}
+div:hover > p{
+    display: block;
+    background-color: blue;
+    color: white;
+}
+/*
+escondendo texto muito fácil,*/
