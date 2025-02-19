@@ -1,0 +1,28 @@
+body{
+    height: 100vh;
+    background: black url('imagens/wallpaper002.jpg') center center no-repeat  fixed;
+    background-size: cover;
+}
+
+
+main{
+    background-color: #eeeeee;
+    max-width: 400px;
+    margin: auto;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-indent: 15px;
+}
+span{
+    font-size: 25px;
+}
+/*
+adicionando (Shorthands backgrounds), na ordem do body que eu fiz
+com uma exeção do (background-size: cover), com ele no shorthand nao funciona, ele tem que ser integrado a parte.*/
