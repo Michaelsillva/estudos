@@ -7,6 +7,7 @@
 html body{
     min-height: 100vh;
     background-color: grey;
+    font-family: "Merienda", serif;
     
 }
 header{
@@ -16,7 +17,8 @@ header{
 }
 header h1{
     padding-top:  50px;
-    font-variant: small-caps;  
+    font-variant: small-caps;
+    font-size: 5vw;  
 }
 header p{
     padding-bottom: 50px;
@@ -33,7 +35,11 @@ section{
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 35px;
+    padding-left: 30px;
+    font-size: 2.8vw;
+}
+section p{
+    padding-bottom: 3em;
 }
 .normal{
     background-color: #ffffff;
@@ -41,19 +47,36 @@ section{
 }
 .imagens{
     background-color: grey;
-    
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 2px 2px 15px #0000009e;
     
     color: #ffffff;
 }
+#imagens2{
+    background-color: #000000;
+    background-image: url('imagens/background002.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 .imagens p{
     background-color: #00000067;
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 12px;
 }
+
 
 footer{
     background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 7px;
+    font-size: 12px;
 
 }
