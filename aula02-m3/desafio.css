@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-left: 150px;
+}
+table{
+   
+    text-align: center;
+    width:  500px;
+    height: 300px;
+    border-collapse: collapse;
+    background-color: bisque;
+    margin-bottom: 5px;
+    
+}
+.sd{
+    text-transform: capitalize;
+}
+td{
+    border: 2px solid black;
+}
+caption{
+    background-color: lightgray;
+    height: 20px;
+    padding: 10px;
+    font-weight: bold;
+
+ }
+ th{
+    border: 2px solid black;
+    
+ }
+ thead{
+    height: 40px;
+ }
+ #ex{
+    width: 700px;
+    height: 300px;
+ }
