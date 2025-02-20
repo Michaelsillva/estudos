@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+table{
+    width: 500px;
+    border-collapse: collapse;
+    position: relative;   
+}
+/* usamos o position relative na table
+e com a tag de cabeçalho usada abaixo, vamos fixar o cabeçalho, quando a fizermos a rolagem ele vai acompanhar ate o final da table.*/
+thead > tr >th{
+    position: sticky;
+    top: -1;
+    background-color: #3c2a15;
+}
+
+thead, tfoot{
+    background-color: #3c2a15;
+    border: 2px solid black;
+    color: #00ff33;
+    
+}
+caption{
+    background-color: #80808076;
+    padding: 10px;
+    font-weight: bold;
+}
+tr:nth-child(2n){ /* usamos essa pseudo class para colocar um efeito zebrado, a propriedade (nth-child) e o valor (2n), para dizer que o background vai ser apricado em uma linha sim e outra nao.(o valor 2n pode ser alterado conforme o valor aplicado. ex: 4n, a cor sera aplicada de 4 em 4)( podemos trocar o 2n pela propriedade (odd) = 'impar' e (even) = 'par'. */
+    background-color: lightgrey;
+}
+
+th{
+    border: 1px solid black;
+    padding: 10px;
+    
+    
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.num{
+    text-align: right;
+}

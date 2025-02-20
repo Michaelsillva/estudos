@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+    <link rel="stylesheet" href="tabelas.css">
+</head>
+<body> <!--antatomia de tabelas grandes
+    TABLE
+      THEAD....
+             TR TH TD
+      TBODY....
+             TR TH TD
+      TFOOT....
+             TR TH TD
+    -->
+    <h1>uso de tabelas grandes</h1> 
+
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 000 000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 000 000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 000 000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total da população</th>
+                <td class="num"><strong>100 000 000</strong></td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+    <h1>mesclagem de tabelas</h1>
+    <table>
+        <tr>
+            <td colspan="2">A</td>/ <!--(colspan) aumenta a celula na horizontal-->
+            
+            <td rowspan="4">C</td><!--(rowspan) aumenta a celula na vertical-->
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            
+        </tr>
+        <tr>
+            
+            <td>L</td>
+            
+        </tr>
+    </table>
+    
+</body>
+</html>

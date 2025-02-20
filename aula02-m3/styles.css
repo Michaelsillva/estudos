@@ -3,11 +3,14 @@ body{
 }
 table{
     width: 400px;
+    height: 400px;
     border-collapse: collapse;
+   
 
 }
 td{
     border: 2px solid black;
     padding: 8px;
     background-color: bisque;
+    vertical-align: middle;/* essa propriedade alinha o conteudo de uma célula (top) = topo (bottom) = baixo (middle) = meio*/
 }
