@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    overflow: auto;
+    
+}
+table{
+    border-collapse: collapse;
+    width: 310px;
+    background-color: bisque;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.611);
+    min-width: 80vw;
+    margin: auto;
+}
+caption{
+    background-color: burlywood;
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.351);
+    
+}
+td,th {
+    border: 1px solid black;
+}
+.nomec{
+    background-color: burlywood;
+}
+.sexoc{
+    background-color: blueviolet;
+}
+/*
+podemos adiconar uma (class) para stilizar um grupo de colunas, colocamos uma (class) ou um (ID) para indentificação e podemos adicionar a propriedade (span "2") você modifica duas colunas de uma vez*/
