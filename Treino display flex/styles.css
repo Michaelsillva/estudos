@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 500px;
+    border: 2px solid black;
+    padding: 10px;
+}
+.conteudo{
+    background-color: rgb(255, 19, 6);
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
