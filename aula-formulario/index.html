@@ -13,7 +13,8 @@
              <input type="text" name="Nome" id="nome"></p>
         <p><label for="sobrenome">sobrenome:</label>
              <input type="text" name="sobrenome" id="sobrenome"></p>
-        <input type="submit" value="ENVIAR">
+             <button type="submit">ENVIAR</button> 
+             <button type="reset">LIMPAR</button>
     </form>
 
 
@@ -28,9 +29,8 @@
 
             <label for="senha">Senha:</label>
             <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" placeholder="Digite sua senha..." autocomplete="current-password">
-
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+            <button type="submit">ENVIAR</button> 
+            <button type="reset">LIMPAR</button>
         </div>
     </form>
 
@@ -40,32 +40,89 @@
 
     <h1>Segundo Teste de form</h1>
     <form action="#" method="get">
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo.." autocomplete="name">
-        </p>
-        <p>
-            <label for="media">média:</label>
-            <input type="number" name="media" id="media" max="10" min="-10" placeholder="0 a 10" step="0.1">
-        </p>
-        <p>
-            <label for="mes">Período Letivo:</label>
-            <input type="month" name="mes" id="mes" value="2016-03">
-        </p>
-        <p>
-            <label for="dia">Dia da Prova:</label>
-            <input type="date" name="dia" id="dia" value="1989-11-25">
-        </p>
-        <p>
-            <label for="hora">Hora da Prova:</label>
-            <input type="time" name="hora" id="hora" value="12:00">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
+        <fieldset>
+            <legend>Dados Escolares</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo.." autocomplete="name">
+            </p>
+            <p>
+                <label for="media">média:</label>
+                <input type="number" name="media" id="media" max="10" min="-10" placeholder="0 a 10" step="0.1">
+            </p>
+            <p>
+                <label for="mes">Período Letivo:</label>
+                <input type="month" name="mes" id="mes" value="2016-03">
+            </p>
+            <p>
+                <label for="dia">Dia da Prova:</label>
+                <input type="date" name="dia" id="dia" value="1989-11-25">
+            </p>
+            <p>
+                <label for="hora">Hora da Prova:</label>
+                <input type="time" name="hora" id="hora" value="12:00">
+            </p>
+            <p>
+                <button type="submit">ENVIAR</button>
+                <button type="reset">LIMPAR</button>
+            </p>
+        </fieldset>
 
     </form>
+    <h1>Aprendendos novos controles de form</h1>
+    <form action="#" method="get">
+        <fieldset><!--fieldset adiciona um grupo de campos, ele agrupa a caixa do form-->
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="email"> Email:</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu email..." autocomplete="email">
+            </div>
+            <div>
+                <label for="telefone">Celular:</label>
+                <input type="tel" name="telefone" id="telefone" pattern="\(\d{2}\)\d{4,5}-\d{4}"  autocomplete="tel" placeholder="(99) 9999-9999">
+                <!--adiconando o pattern para exigir um formato especifico no input
+                com essa conf podemos ordenar as seguintes ordens: \(\d{2}\): Exige dois dígitos dentro de parênteses (DDD da sua cidade)
+                \d{4,5}: Permite números com 4 ou 5 dígitos (para telefones fixos e celulares)..
+                -: O hífen separador.
+                \d{4}: Últimos 4 dígitos do telefone.
+                placeholder="(99) 99999-9999": Exibe um exemplo do formato esperado.
+                required: Obriga o preenchimento do campo antes do envio.
+                com essa conf o campo fica especifico para essa determinada ação.-->
+            </div>
+            <div>
+                <button type="submit">ENVIAR</button>
+                <button type="reset">LIMPAR</button>
+            
+            </div>
+        </fieldset>
+        
+    </form>
+    <h1>Aprendendos checkbox</h1>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Jogos Favoritos</legend>
+            <input type="checkbox" name="mine" id="mine" required><label for="mine">Minecraft <br></label>
+            <input type="checkbox" name="war" id="war"><label for="war">God of War <br></label>
+            <input type="checkbox" name="last" id="last"><label for="last">The last of us <br> </label>
+            <input type="checkbox" name="need" id="need"><label for="need">Need for speed <br></label>
+            
+
+        </fieldset>
+    </form>
+    <form action="#">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexom" value="M"><label for="sexom">Masculino</label>
+            <input type="radio" name="sexo" id="sexof" value="F"><label for="sexof">Feminino</label>
+        </fieldset>
+        <div>
+            <button type="submit">ENVIAR</button>
+                <button type="reset">LIMPAR</button>
+
+        </div>
+    </form>
+
+
 
 
     
