@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="#" method="get">
+        <p><label for="nome">Nome:</label>
+             <input type="text" name="Nome" id="nome"></p>
+        <p><label for="sobrenome">sobrenome:</label>
+             <input type="text" name="sobrenome" id="sobrenome"></p>
+        <input type="submit" value="ENVIAR">
+    </form>
+
+
+
+
+
+    <h1>Teste de form</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="user" required minlength="5" maxlength="30" placeholder="Digite seu nome..." autocomplete="username">
+
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required minlength="8" maxlength="20" placeholder="Digite sua senha..." autocomplete="current-password">
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+
+
+
+
+    <h1>Segundo Teste de form</h1>
+    <form action="#" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo.." autocomplete="name">
+        </p>
+        <p>
+            <label for="media">média:</label>
+            <input type="number" name="media" id="media" max="10" min="-10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="mes">Período Letivo:</label>
+            <input type="month" name="mes" id="mes" value="2016-03">
+        </p>
+        <p>
+            <label for="dia">Dia da Prova:</label>
+            <input type="date" name="dia" id="dia" value="1989-11-25">
+        </p>
+        <p>
+            <label for="hora">Hora da Prova:</label>
+            <input type="time" name="hora" id="hora" value="12:00">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+
+
+    
+</body>
+</html>
