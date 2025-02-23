@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+</head>
+<body>
+
+
+
+
+    <h1>Formulário</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="num1">Número 1</label>
+            <input type="number" name="num1" id="num1" min="-50" max="50" oninput="soma.innerHTML=Number(num1.value)+ Number(num2.value)">
+        </div>
+        <div>
+            <label for="num2">Número 2</label>
+            <input type="number" name="num2" id="num2" min="-50" max="50" oninput="soma.innerHTML=Number(num1.value)+ Number(num2.value)">
+        </div>
+        <div>
+            <label for="soma">Soma</label>
+            <output id="soma">0</output>
+        </div>
+    </form>
+
+
+
+    <h1>Novo Exemplo</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="n">Números</label>
+            <input type="range" name="n" id="n" max="100" min="-100"
+            oninput="n1.innerHTML=Number(n.value)">
+            <output id="n1">50</output>
+        </div>
+    </form>
+
+
+
+
+
+    <h1>Mais um Exercício de Form</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="nasc">Em que ano você nasceu?</label>
+            <input type="number" name="nasc" id="nasc" min="1950" max="2025" oninput="calcule()">
+        </div>
+        <div>
+            <label for="idad">Sua idade é</label>
+            <output id="idad">0</output>
+        </div>
+    </form>
+    <script>
+        function calcule(){
+            let atual= new Date().getFullYear()
+            idad.innerHTML=atual-Number(nasc.value)
+        }
+       
+    </script>
+    
+</body>
+</html>
