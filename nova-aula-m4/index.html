@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova aula do m4</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="num1">Número 1:</label>
+            <input type="number" name="num" id="num1" min="-50" max="50" required oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
+        </div>
+        <div>
+            <label for="num2">Número 2:</label>
+            <input type="number" name="num" id="num2" min="-50" max="50" required oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
+        </div>
+        <div>
+            <label for="soma">Soma:</label>
+            <output name="soma" id="soma">0</output>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+    <h1>Novo Exemplo</h1>
+    <form action="#">
+        <div>
+            <label for="numero1">Número:</label>
+            <input type="range" name="numero1" id="numero1" min="-100" oninput="mostrarnum.innerHTML = Number(numero1.value)">
+            <output id="mostrarnum">50</output>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+
+
+
+
+    <h1>Mais um Exercício de Form</h1>
+    <form action="#" method="get">
+        <div>
+            <label for="nascimento">Em que ano você nasceu?</label>
+            <input type="number" name="nascimento" id="nascimento" min="1950" max="2025" value="2025"
+             oninput="calcularidade()">
+        </div>
+        <div>
+            <label for="idade">Sua idade é</label>
+           <output id="idade">0</output>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+
+    <!--um breve programação em JavaScript-->
+    <script>
+        function calcularidade(){
+            let atual = new Date().getFullYear()
+            idade.innerHTML= atual-Number(nascimento.value)
+        }
+    </script>
+
+
+    
+</body>
+</html>
