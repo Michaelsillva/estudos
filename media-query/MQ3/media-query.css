@@ -1,0 +1,54 @@
+/*outras versões*/
+
+/* typical device breakpoints
+Mobile devices: 320-480px para celulares extra pequenos.
+e até 576px para os demais tamanhos de celulares.
+
+===================================
+(MOBILE: 320-480px ou o max 576px)
+(TABLET: 577-1024px)
+(DESKTOPS: 1025-1440px)
+e (1441px )para tvs e Desktops grandes
+========================================*/
+@media screen and (min-width:577px) and (max-width:1024px){
+     body{
+        background-image: url(imagens/back-tablet.jpg);
+     }
+     #phone{display:none;}
+#tablet{display:block;}
+#print{display: none;}
+#pc{display: none;}
+#tv{display: none;}
+     
+}
+@media screen and (min-width:1025px) and (max-width:1440px) {
+    body{
+        background-image: url(imagens/back-pc.jpg);
+    }
+
+    #phone{display:none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: block;}
+    #tv{display: none;}
+    
+}
+@media screen and (min-width:1441px) {
+    body{
+        background-image: url(imagens/back-tv.jpg);
+    }
+    #phone{display:none;}
+    #tablet{display: none;}
+    #print{display: none;}
+    #pc{display: none;}
+    #tv{display: block;}
+    
+}
+@media print{
+    #phone{display:none;}
+    #tablet{display: none;}
+    #print{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
+
+}
