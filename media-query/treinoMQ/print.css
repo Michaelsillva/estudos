@@ -11,6 +11,9 @@ h1{
 #phone{
     display: none;
 }
+#impressora{
+    display: block;
+}
 footer{
     background-color: #ffffff8c;
     text-align: center;

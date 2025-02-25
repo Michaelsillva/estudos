@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+</head>
+<body>
+    <header>
+        <h1>Fio & Afeto</h1>
+        <p>Representando o carinho e a dedicação em cada peça.</p>
+        <span id="Menu-burger" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><a href="#">Dicas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Meus Mimos</h2>
+            <p>Cada peça de crochê que criamos é feita com amor, paciência e dedicação, resultando em produtos únicos que trazem aconchego, beleza e personalidade para o seu dia a dia. Utilizamos materiais de alta qualidade, garantindo não apenas um acabamento impecável, mas também durabilidade e conforto. Nossos produtos vão desde itens decorativos, como mantas, tapetes e sousplats, até acessórios encantadores, como bolsas, chaveiros e amigurumis, todos confeccionados artesanalmente para agregar charme e exclusividade ao seu estilo ou ambiente. Seja para presentear alguém especial ou para transformar sua casa em um espaço ainda mais acolhedor, cada peça carrega em seus pontos a essência do trabalho manual, feito com carinho para tornar momentos simples em algo especial.</p>
+            <section>
+                <img src="Imagens/croche.jpg" alt="">
+            </section>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (menu.style.display == 'block'){
+                menu.style.display = 'none'
+            } 
+            else { menu.style.display = 'block'
+
+            }
+
+        }
+    </script>
+    
+</body>
+</html>

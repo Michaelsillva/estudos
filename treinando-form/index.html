@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino</title>
 </head>
+
 <body>
 
 
@@ -14,11 +16,13 @@
     <form action="#" method="get">
         <div>
             <label for="num1">Número 1</label>
-            <input type="number" name="num1" id="num1" min="-50" max="50" oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
+            <input type="number" name="num1" id="num1" min="-50" max="50"
+                oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
         </div>
         <div>
             <label for="num2">Número 2</label>
-            <input type="number" name="num2" id="num2" min="-50" max="50" oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
+            <input type="number" name="num2" id="num2" min="-50" max="50"
+                oninput="soma.innerHTML=Number(num1.value) + Number(num2.value)">
         </div>
         <div>
             <label for="soma">Soma</label>
@@ -32,8 +36,7 @@
     <form action="#" method="get">
         <div>
             <label for="n">Números</label>
-            <input type="range" name="n" id="n" max="100" min="-100"
-            oninput="n1.innerHTML=Number(n.value)">
+            <input type="range" name="n" id="n" max="100" min="-100" oninput="n1.innerHTML=Number(n.value)">
             <output id="n1">50</output>
         </div>
     </form>
@@ -53,13 +56,19 @@
             <output id="idade1">0</output>
         </div>
         <script>
-            function calc(){
-                let atual=new Date().getFullYear()
-                idade1.innerHTML=atual-Number(idd.value)
+            function calc() {
+                let atual = new Date().getFullYear();
+                idade1.innerHTML = atual - Number(idd.value)
             }
         </script>
-    
-        
-    
+        <!--Para obter a data atual, use const date = new Date();
+            Para obter o ano atual, use new Date().getFullYear();
+            Para obter o dia da semana, use now.getDay();
+            Para obter o dia do mês, use now.getDate();
+            Para obter o mês, use now.getMonth();-->
+
+
+
 </body>
+
 </html>
