@@ -1,0 +1,15 @@
+body{
+    background-image: linear-gradient(to bottom, #e3e3d8,#D9AAAB);
+}
+#login{
+    width: 90vw;
+    display: flex;
+
+}
+#imagem{
+    width: 30%;
+    height: 100%;
+}
+#formulario{
+    width: 60%;
+}
