@@ -3,12 +3,14 @@ body{
 }
 #login{
     width: 90vw;
+    height: 400px;
     display: flex;
 
 }
 #imagem{
-    width: 30%;
+    width: 50%;
     height: 100%;
+    
 }
 #formulario{
     width: 60%;
