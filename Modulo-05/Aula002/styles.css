@@ -1,0 +1,36 @@
+body{
+    background-color: rgba(1, 1, 1, 0.822);
+}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+.item{
+    border: 1px solid black;
+   padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.771);
+    height: 300px;
+    width: 350px;
+    
+    
+    
+
+}
+img{
+    height: 300px;
+    width: 350px;
+}
+img:hover{
+    transform: scale(1.3);
+    transition: 1s ease-in-out;
+}

@@ -1,0 +1,10 @@
+.container{
+    background-color: brown;
+    display: flex;
+}
+.item{
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+
+}
