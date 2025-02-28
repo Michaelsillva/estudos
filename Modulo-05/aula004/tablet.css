@@ -1,0 +1,19 @@
+main{
+    width: 600px;
+}
+header > h1{
+    color: white;
+    flex: 0 0 150px;
+    
+
+}
+header{
+    flex-flow: row wrap;
+}
+nav {
+    width: 50vw;
+    flex-flow: row;
+    
+    
+}
+

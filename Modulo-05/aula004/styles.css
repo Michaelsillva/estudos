@@ -13,18 +13,19 @@ header{
     background-color: #203d52;
     padding: 10px; 
     display: flex; 
-    flex-flow: wrap;
+    flex-flow:column wrap;
     justify-content: space-between;
     align-items: center;
 }
 header > h1{
     color: white;
     flex: 0 0 150px;
+    flex-basis: 70px;
 
 }
 nav{
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:column wrap;
     justify-content: end;
     
    
@@ -38,21 +39,26 @@ nav a{
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+    width: 60vw;
+    margin-bottom: 10px;
 }
 nav a:hover{
     background-color: #4a6f8a;
     color: #000000;
     transition: 0.5s;
+    transform:scale(1.1) translate(0px, 6px);
 }
 main{
     background-color: white;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 15px;
     box-shadow: 2px 2px 8px #00000086;
     border-radius: 10px;
     line-height: 1.3em;
     width: 400px;
+    transition: width 0.7s, heiht 0.7s;
+    
 }
 main > h2{
     margin-bottom: 15px;
