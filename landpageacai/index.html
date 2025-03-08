@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí Delícia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navegation">
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#pedido">Peça Agora</a></li>
+            </ul>
+        </nav>
+       
+        
+    </header>
+    
+    <section id="produtos" class="produtos">
+        <h2 class="titulo-card">Escolha o Seu Açaí</h2>
+        <div class="container">
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí Tradicional">
+                <h3>Açaí Tradicional</h3>
+                <p>Cremosidade e sabor irresistível!</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20Tradicional." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí com Frutas">
+                <h3>Açaí com Frutas</h3>
+                <p>Com banana, morango e granola.</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20com%20Frutas." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí Gourmet">
+                <h3>Açaí Gourmet</h3>
+                <p>Chocolate, leite condensado e mais!</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20Gourmet." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí Proteico">
+                <h3>Açaí Proteico</h3>
+                <p>Rico em proteínas para sua dieta.</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20Proteico." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí com Mel">
+                <h3>Açaí com Mel</h3>
+                <p>Doce na medida certa com mel natural.</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20com%20Mel." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+            <div class="card">
+                <img src="Imagens/marmitaddeacai2-removebg-preview.png" alt="Açaí com Amendoim">
+                <h3>Açaí com Amendoim</h3>
+                <p>Uma combinação deliciosa e energética.</p>
+                <a href="https://wa.me/SEU_NUMERO_AQUI?text=Olá!%20Quero%20pedir%20um%20Açaí%20com%20Amendoim." class="btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> Enviar</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="pedido" class="pedido">
+        <h2>Faça Seu Pedido</h2>
+        <form id="pedidoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            
+            <label for="sabor">Escolha o sabor:</label>
+            <select id="sabor" required>
+                <option value="tradicional">Açaí Tradicional</option>
+                <option value="frutas">Açaí com Frutas</option>
+                <option value="gourmet">Açaí Gourmet</option>
+                <option value="proteico">Açaí Proteico</option>
+                <option value="mel">Açaí com Mel</option>
+                <option value="amendoim">Açaí com Amendoim</option>
+                <option value="castanha">Açaí com Castanha</option>
+                <option value="morango">Açaí com Morango</option>
+                <option value="nutella">Açaí com Nutella</option>
+            </select>
+            
+            <label for="endereco">Endereço de Entrega:</label>
+            <input type="text" id="endereco" required>
+            
+            <button type="submit" class="btn">Enviar Pedido</button>
+        </form>
+    </section>
+    
+    <script>
+        document.getElementById("pedidoForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let nome = document.getElementById("nome").value;
+            let sabor = document.getElementById("sabor").value;
+            let endereco = document.getElementById("endereco").value;
+            let telefone = "SEU_NUMERO_AQUI"; // Substitua pelo seu número do WhatsApp
+            
+            let mensagem = `Olá, meu nome é ${nome} e gostaria de pedir um ${sabor}. Meu endereço de entrega é: ${endereco}.`;
+            let url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+            
+            window.open(url, "_blank");
+        });
+    </script>
+</body>
+</html>
